@@ -1,0 +1,57 @@
+ul.MenuTop  {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #e3e0cf;
+
+
+}
+
+ul.MenuTop li {float: left;}
+
+
+ul.MenuTop  li a{
+    display:inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+ul.MenuTop  li a:hover {background-color: #9fa8a3;}
+
+ul.MenuTop  li.icon {display: none;}
+
+@media screen and (max-width:680px) {
+  .MustHide {
+    display: none;
+
+
+  }
+  ul.MenuTop li.icon{
+    float: right;
+    display: inline;
+  }
+}
+
+@media screen and (max-width:680px){
+  ul.MenuTop.responsive {position: relative;}
+  ul.MenuTop.responsive li.icon{
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.MenuTop.responsive li{
+
+    float: none;
+    display: inline;
+  }
+  ul.MenuTop.responsive li a{
+    display: block;
+    text-align: left;
+  }
+
+}
